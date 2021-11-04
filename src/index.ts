@@ -35,6 +35,10 @@ app.get("/api/randomizer", (req, res) => {
   }
 });
 
+app.get('/', function(req, res){
+  res.send('Theres nothing here.');
+});
+
 app.get('*', function(req, res){
   res.status(404).send('Not Found');
 });
